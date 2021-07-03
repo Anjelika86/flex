@@ -9,17 +9,17 @@
     <title>flex</title>
   </head>
   <body>
-    <header class="header flex">
+    <header class="header flex-header">
       <h1 class="header-title">Welcom to Acme Web Solutions</h1>
       <p class="text-header">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
         explicabo officia debitis aspernatur magnam nihil nulla aut error
         asperiores excepturi?
       </p>
-      <a class="link-header" href="#section-2">Read More</a>
+      <a class="link-header" href="#card-container">Read More</a>
     </header>
     <main>
-    <section class="section1">
+    <section class="web-section">
       <h2 class="section-title">Web & Application Development</h2>
       <p class="section-text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus impedit
@@ -27,25 +27,27 @@
         aliquam harum suscipit eaque odit! Expedita ipsum dolorum voluptatum.
       </p>
     </section>
-    <section id="section-2" class="section2">
-      <ul class="flex-section2">
+    <section id="card-container" class="card-container">
+      <ul class="flex-card-container">
         <li class="list">
           <img class="img" src="assets/img/photo1.jpeg" alt="Developer" />
-          <h3 class="section2-title">Web Development</h3>
-          <p class="list-text">
+          <h3 class="card-title">Web Development</h3>
+          <div class="card-text-wrapper"><p >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
             laboriosam optio excepturi quo necessitatibus repellendus, explicabo
             neque quia saepe dolore!
-          </p>
+          </p></div>
+          
         </li>
         <li class="list list2">
           <img class="img" src="assets/img/photo2.jpeg" alt="Mobile" />
-          <h3 class="section2-title">Mobile Applications</h3>
-          <p class="list-text">
+          <h3 class="card-title">Mobile Applications</h3>
+          <div class="card-text-wrapper"> <p >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
             consequatur possimus atque. Error, ab. Nesciunt harum soluta
             repellat blanditiis provident.
-          </p>
+          </p></div>
+         
         </li>
         <li class="list">
           <img
@@ -53,16 +55,17 @@
             src="assets/img/photo3.jpeg"
             alt="Notebook Tech Marketing"
           />
-          <h3 class="section2-title">Tech Marketing</h3>
-          <p class="list-text">
+          <h3 class="card-title">Tech Marketing</h3>
+          <div class="card-text-wrapper"><p >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
             doloremque ipsum veniam perferendis totam, mollitia quaerat ab cum
             illum maxime.
-          </p>
+          </p></div>
+          
         </li>
       </ul>
     </section>
-    <section class="section1">
+    <section class="web-section">
       <h3 class="section-title">We handle all of your digital needs</h3>
       <p class="section-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas
@@ -70,17 +73,18 @@
         Obcaecati.
       </p>
     </section>
-    <div class="wrapper">
-      <section class="section3">
+    <div class="wrapper-cont-about-section">
+      <section class="contact-section">
         <h2 class="section-title">Contact Us</h2>
         <p class="section-text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto
           corporis illum illo alias magnam ratione voluptatibus blanditiis
           autem. Doloremque?
         </p>
-        <p>contact@acmewebsolutions.test</p>
+        <p><a class="link-contact" href="#">contact@acmewebsolutions.test</a> </p>
+        
       </section>
-      <section class="section4">
+      <section class="about-section">
         <h2 class="section-title">About Our Company</h2>
         <p class="section-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, facilis
@@ -91,11 +95,9 @@
     </div>
   </main>
   <footer class=" footer flex-footer">
-    <div class="footer-text">Acme Web Solutions
-    </div>
-    <div class="footer-text">Project By
-    <a class="link-footer" href="https://traversymedia.com/" target="_blank">Traversy Media</a>
-  </div>
+     <p class="footer-text">Acme Web Solutions</p>
+     <p class="footer-text">Project By <a class="link-footer" href="https://traversymedia.com/" target="_blank">Traversy Media</a></p> 
+  
   </footer>
   </body>
 </html>
