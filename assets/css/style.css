@@ -15,8 +15,9 @@ body {
 }
 
 .header {
-  min-height: 450px;
+  height: 450px;
   color: white;
+  padding: 20px;
 }
   
 .header ::before {
@@ -31,13 +32,13 @@ body {
   bottom: 0;
   left: 0;
   position: absolute;
-  min-height: 450px;
+  height: 450px;
   opacity: 0.1;
   z-index: -1;
 
 }
 
- .flex {
+ .flex-header {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -51,11 +52,12 @@ body {
   .section2-title {
     font-size: 35px;
     font-weight: bold;
-    padding: 10px;
+    margin-bottom: 30px;
+    
   }
 
   .text-header {
-    padding: 20px;
+   margin-bottom: 30px;
   }
 
   .link-header {
@@ -64,7 +66,7 @@ body {
     border: 1px solid #666;
     padding: 20px 40px;
     background: #333;
-    margin: 10px 0;
+    
   }
 
   .link-header:hover {
@@ -72,26 +74,25 @@ body {
     color: black;
     transition-duration: 1.5s; 
   }
-  .section1 {
+  .web-section {
    padding: 20px;
     background: white;
   }
 
   .section-title{
     font-size: 25px;
+    margin: 30px 0;
     
   }
   .section-text {
-    margin-top: 20px;
-    padding: 20px;
+   margin-bottom: 30px;
     
   }
 
-  .flex-section2,
-  .wrapper {
+  .flex-card-container,
+  .wrapper-cont-about-section {
     display: flex;
     justify-content: center;
-    background: #333333;
     flex-wrap: wrap;
   }
  
@@ -103,13 +104,12 @@ body {
     
   }  
 
-  .list-text {
+  .card-text-wrapper {
     padding: 20px;
-     text-transform: capitalize; 
+      
   }
 
   .img {
-    display: block;
     width: 100%;
   }
 
@@ -117,26 +117,29 @@ body {
     margin: 30px 20px;
   }
 
-  .section2-title {
+  .card-title {
     font-size: 20px;
-    margin-top: 20px;
-    padding: 20px 0;
+    margin-top: 30px;
+    
   }
 
-  .wrapper {
-    background: none;
+  .wrapper-cont-about-section {
     color: white;
   }
 
-  .section3,
-  .section4 {
+  .contact-section,
+  .about-section {
     background-color: #2690D4;
-    padding: 30px;
+    padding: 20px;
     width: 50%;
-    overflow: hidden;
+    
   }
-
-  .section4 {
+  .link-contact {
+    text-decoration: none;
+    color: white;
+  }
+ 
+  .about-section {
     background-color: #333333;
   }
 
@@ -144,7 +147,7 @@ body {
     color: white;
     text-align: center;
     background: #000000;
-    padding: 35px;
+    padding: 30px;
   }
 
 .flex-footer {
@@ -156,6 +159,7 @@ body {
 .footer-text,
 .link-footer {
   font-size: 20px;
+  
 }
 
 .link-footer {
