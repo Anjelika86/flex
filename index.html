@@ -9,7 +9,7 @@
     <title>flex</title>
   </head>
   <body>
-    <header class="header flex-section">
+    <header class="header flex-header">
       <div class="container">
         <h1 class="header-title">Welcom to Acme Web Solutions</h1>
         <p class="section-text">
@@ -17,7 +17,7 @@
           explicabo officia debitis aspernatur magnam nihil nulla aut error
           asperiores excepturi?
         </p>
-        <a class="link-header overflow-protection" href="#card-container">Read More</a>
+        <a class="link link-header overflow-protection" href="#card-container">Read More</a>
     </div>
     </header>
     <main>
@@ -33,9 +33,11 @@
     </section>
     <section id="card-container" class="card-container ">
       <h2 class="title-section hidden-title">Our work</h2>
-      <div class="container flex-wrapper">
+      <div class="container flex-wrapper-section">
       <section class="card">
-        <img class="img" src="assets/img/photo1.jpeg" alt="Developer" />
+        <div class="img-wrapper">
+          <img class="img" src="assets/img/photo1.jpeg" alt="Developer" />
+        </div>
           <div class="card-text-wrapper">
             <h3 class="card-title">Web Development</h3>
             <p >
@@ -46,7 +48,9 @@
         </div>
       </section>
         <section class="card">
-          <img class="img" src="assets/img/photo2.jpeg" alt="Mobile" />
+          <div class="img-wrapper">
+            <img class="img" src="assets/img/photo2.jpeg" alt="Mobile" />
+          </div>
           <div class="card-text-wrapper">
             <h3 class="card-title">Mobile Applications</h3>
              <p >
@@ -57,9 +61,9 @@
         </div>
       </section>
         <section class="card">
-          <img class="img"
-            src="assets/img/photo3.jpeg"
-            alt="Notebook Tech Marketing"  />
+          <div class="img-wrapper">
+            <img class="img" src="assets/img/photo3.jpeg" alt="Notebook Tech Marketing"  />
+          </div>
           <div class="card-text-wrapper">
             <h3 class="card-title">Tech Marketing</h3>
             <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
@@ -81,20 +85,17 @@
     </div>
       
     </section>
-    <div class="wrapper-cont-about-section flex-wrapper">
+    <div class="wrapper-cont-about-section flex-wrapper-section">
       <section class="contact-section">
-        <div class="container">
           <h2 class="title-section">Contact Us</h2>
           <p class="section-text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto
             corporis illum illo alias magnam ratione voluptatibus blanditiis
             autem. Doloremque?
           </p>
-          <a href="# ">contact@acmewebsolutions.test</a> 
-      </div>
+          <a class="link" href="# ">contact@acmewebsolutions.test</a> 
       </section>
       <section class="about-section">
-        <div class="container"></div>
         <h2 class="title-section">About Our Company</h2>
         <p class="section-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, facilis
@@ -102,12 +103,12 @@
           fugit?
         </p>
       </section>
-    </div>
+      </div>
   </main>
   <footer class=" footer flex-footer">
      <p class="footer-text">Acme Web Solutions</p>
      <p class="footer-text">Project By 
-       <a class="link-footer" href="https://traversymedia.com/" target="_blank">Traversy Media</a>
+       <a class="link link-footer" href="https://traversymedia.com/" target="_blank">Traversy Media</a>
       </p> 
   </footer>
   </body>
