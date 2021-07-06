@@ -8,16 +8,26 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   text-align: center;
-  margin: 0 auto;
   background: #333;
  
 }
+
+.card-container,
+.header {
+  position: relative;
+}
+.header::before,
+.hidden-title {
+  position: absolute;
+
+}
+
 
 .header {
   min-height: 450px;
   color: white;
   padding: 20px;
-  position: relative;
+  
 }
   
 .header::before {
@@ -31,14 +41,18 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  position: absolute;
   opacity: 0.3;
   z-index: -1;
 
 }
 
- .flex-section {
+ .flex-header,
+ .flex-wrapper-section,
+ .flex-footer {
    display: flex;
+ }
+
+ .flex-header {
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -48,15 +62,17 @@ body {
  .container {
    max-width: 900px;
    margin: 0 auto;
+  
  }
+
+  .header-title {
+    font-size: 2rem;
+  }
 
   .header-title,
   .title-section,
   .card-title {
-    font-size: 2rem;
     font-weight: bold;
-    
-    
   }
   .header-title,
   .title-section,
@@ -66,7 +82,7 @@ body {
 
   }
   
-  a {
+  .link {
     text-decoration: none;
     color: inherit;
   }
@@ -102,26 +118,21 @@ body {
   }
   .text-columns {
     columns: 2 5rem;
-    column-gap: 1.2rem;
+    column-gap: 1.5rem;
   }
  
-  .flex-wrapper{
-    display: flex;
+  .flex-wrapper-section{
     justify-content: center;
-    align-items: center;
-   
   }
   .card-container {
-    position: relative;
     padding: 20px;
   }
   .hidden-title {
-    position: absolute;
     left: -5000%;
   }
  
   .card {
-    width: 250px;
+    max-width: 250px;
     margin: 10px; 
     background: white;
   }  
@@ -137,7 +148,6 @@ body {
     object-position: center;
     object-fit: cover;
   }
-
   
   .card-title {
     font-size: 1.2rem;
@@ -145,9 +155,8 @@ body {
 
   .wrapper-cont-about-section {
     color: white;
-    margin: 0 auto;
-    
   }
+  
   .contact-section {
     background-color: #2690D4;
     
@@ -157,11 +166,8 @@ body {
   .about-section {
     padding: 20px;
    
-   
   }
-  .about-section {
-    margin-bottom: 50px;
-  }
+  
 
   .footer {
     color: white;
@@ -170,20 +176,18 @@ body {
     padding: 30px;
   }
 
-.flex-footer {
-  display: flex;
+ .flex-footer {
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
-.footer-text,
-.link-footer {
-  font-size: 1.2rem;
-  
-}
+  .footer-text,
+  .link-footer {
+    font-size: 1.2rem;
+    
+  }
 
-.link-footer {
-  color: #157ED4;
-  
-}
+  .link-footer {
+    color: #157ED4;
+    
+  }
 
