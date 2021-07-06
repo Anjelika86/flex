@@ -9,28 +9,33 @@
     <title>flex</title>
   </head>
   <body>
-    <header class="header flex-header">
-      <h1 class="header-title">Welcom to Acme Web Solutions</h1>
-      <p class="text-header">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-        explicabo officia debitis aspernatur magnam nihil nulla aut error
-        asperiores excepturi?
-      </p>
-      <a class="link-header" href="#card-container">Read More</a>
+    <header class="header flex-section">
+      <div class="container">
+        <h1 class="header-title">Welcom to Acme Web Solutions</h1>
+        <p class="section-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          explicabo officia debitis aspernatur magnam nihil nulla aut error
+          asperiores excepturi?
+        </p>
+        <a class="link-header overflow-protection" href="#card-container">Read More</a>
+    </div>
     </header>
     <main>
-    <section class="web-section">
-      <h2 class="title-section">Web & Application Development</h2>
-      <p class="section-text">
+    <section class="web-section ">
+      <div class="container">
+        <h2 class="title-section">Web & Application Development</h2>
+      <p class="section-text text-columns">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus impedit
         aut non laudantium, qui, in labore tempora sint cumque nesciunt magni
         aliquam harum suscipit eaque odit! Expedita ipsum dolorum voluptatum.
       </p>
+    </div>
     </section>
-    <section id="card-container" class="card-container">
-      <ul class="flex-card-container flex-wrapper">
-        <li class="card-list">
-          <img class="img" src="assets/img/photo1.jpeg" alt="Developer" />
+    <section id="card-container" class="card-container ">
+      <h2 class="title-section hidden-title">Our work</h2>
+      <div class="container flex-wrapper">
+      <section class="card">
+        <img class="img" src="assets/img/photo1.jpeg" alt="Developer" />
           <div class="card-text-wrapper">
             <h3 class="card-title">Web Development</h3>
             <p >
@@ -39,8 +44,8 @@
             neque quia saepe dolore!
           </p>
         </div>
-        </li>
-        <li class="card-list card-list-center">
+      </section>
+        <section class="card">
           <img class="img" src="assets/img/photo2.jpeg" alt="Mobile" />
           <div class="card-text-wrapper">
             <h3 class="card-title">Mobile Applications</h3>
@@ -50,42 +55,46 @@
             repellat blanditiis provident.
           </p>
         </div>
-        </li>
-        <li class="card-list">
-          <img
-            class="img"
+      </section>
+        <section class="card">
+          <img class="img"
             src="assets/img/photo3.jpeg"
-            alt="Notebook Tech Marketing"
-          />
+            alt="Notebook Tech Marketing"  />
           <div class="card-text-wrapper">
             <h3 class="card-title">Tech Marketing</h3>
             <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
             doloremque ipsum veniam perferendis totam, mollitia quaerat ab cum
             illum maxime.
-          </p>
-        </div>
-        </li>
-      </ul>
+            </p>
+          </div>
+      </section>
+    </div>
     </section>
     <section class="web-section">
-      <h3 class="title-section">We handle all of your digital needs</h3>
-      <p class="section-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas
-        numquam delectus sit explicabo ad tempore nihil quisquam similique!
-        Obcaecati.
-      </p>
+      <div class="container">
+        <h3 class="title-section">We handle all of your digital needs</h3>
+        <p class="section-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas
+          numquam delectus sit explicabo ad tempore nihil quisquam similique!
+          Obcaecati.
+        </p>
+    </div>
+      
     </section>
     <div class="wrapper-cont-about-section flex-wrapper">
       <section class="contact-section">
-        <h2 class="title-section">Contact Us</h2>
-        <p class="section-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto
-          corporis illum illo alias magnam ratione voluptatibus blanditiis
-          autem. Doloremque?
-        </p>
-        <p><a class="link-contact-section" href="# ">contact@acmewebsolutions.test</a> </p>
+        <div class="container">
+          <h2 class="title-section">Contact Us</h2>
+          <p class="section-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto
+            corporis illum illo alias magnam ratione voluptatibus blanditiis
+            autem. Doloremque?
+          </p>
+          <a href="# ">contact@acmewebsolutions.test</a> 
+      </div>
       </section>
       <section class="about-section">
+        <div class="container"></div>
         <h2 class="title-section">About Our Company</h2>
         <p class="section-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, facilis
